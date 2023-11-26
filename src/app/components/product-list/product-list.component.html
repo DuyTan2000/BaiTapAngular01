@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-head">
+    Product List
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product Code</th>
+          <th>Product Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td scope="row">{{ product.productCode }}</td>
+          <td scope="row">{{ product.productName }}</td>
+          <td>
+            <app-star></app-star>
+          </td>
+          <td scope="row">View Edit Delete</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
